@@ -1,0 +1,127 @@
+/* ===== Dashboard Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Stock Card ===== */
+.stock-card {
+  padding: 14px;
+}
+
+.stock-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.stock-symbol {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.stock-name {
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.stock-price {
+  margin-top: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.price-value {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+/* Basit yükseldi/düştü görünümü için (sonradan state ile class verebilirsin) */
+.price-up { color: #7CFFB2; }
+.price-down { color: #FF7C7C; }
+
+.stock-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+/* ===== Modal (Alarm) ===== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  z-index: 50;
+}
+
+.modal {
+  width: min(520px, 92vw);
+  padding: 16px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.modal-body {
+  margin-top: 12px;
+}
+
+.modal-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* ===== Toast ===== */
+.toast {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: rgba(0,0,0,0.85);
+  border: 1px solid rgba(255,255,255,0.16);
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  z-index: 60;
+  max-width: min(420px, 92vw);
+}
+
+.btn-logout {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-logout:hover {
+  background: #dc2626;
+}
+
