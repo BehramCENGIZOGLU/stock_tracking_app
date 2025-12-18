@@ -63,10 +63,11 @@ PRICE_POLL_INTERVAL_MS=300000
 
 ```bash
 cd server
-npm instal
- 
+npm install
+ ```
 
-## 🎨 Frontend (Client) Kurulumu 
+
+## 🎨 Frontend (Client) Kurulumu
 
 client/.env oluşturun:
 
