@@ -63,9 +63,10 @@ PRICE_POLL_INTERVAL_MS=300000
 
 ```bash
 cd server
-npm install
+npm instal
+ 
 
-🎨 Frontend (Client) Kurulumu
+## 🎨 Frontend (Client) Kurulumu 
 
 client/.env oluşturun:
 
@@ -74,16 +75,17 @@ VITE_API_BASE_URL=http://localhost:5000
 cd client
 npm install
 
-🗄️ Veritabanı / Seed İşlemleri
+## 🗄️ Veritabanı / Seed İşlemleri
 cd server
 node scripts/seedStocks.js
 
-Backend (Server) Çalıştırma 
+## Backend (Server) Çalıştırma 
 
 cd server 
 npm run dev
 
-Frontend (Client) Çalıştırma
+## Frontend (Client) Çalıştırma
 
 cd client
 npm run dev
+
